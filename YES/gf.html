@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Please be my Gf</title>
+    <link rel="stylesheet" href="gf.css">
+</head>
+<body>
+    <div class="container">
+        <div>
+            <h1 class="ask">
+                PLEASE BE MY GIRLFRIEND
+            </h1>
+        </div>
+        
+        <div class="gif_container">
+            <img src="./giphy.gif" alt="cute fif">
+        </div>
+<div class="buttons">
+
+    <button class="btn" id="yesButton" style="border-radius: 10px;" onclick="nextPage()">YES </button=>
+
+    <button class="btn" id="noButton" style="border-radius: 10px;" onmouseover="moveButton()"> NO </button>
+
+</div> 
+<script>
+
+    function nextPage()
+    {
+        window.location.href="yes.html"
+    }
+
+    function moveButton()
+    {
+        var x=Math.random() * ( window.innerWidth - document.getElementById('noButton').offsetWidth);
+        var y= Math.random() * ( window.innerHeight - document.getElementById('noButton').offsetHeight);
+        document.getElementById('noButton').style.left=`${x}px`;
+        document.getElementById('noButton').style.top=`${y}px`;
+    }
+</script>
+
+</div> 
+</body>
+</html>
+</body>
+</html>
