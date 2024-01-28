@@ -5,8 +5,29 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Dynamic clock</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="./clock.png">
 </head>
 <body>
     
+
+    <button onclick="clearInterval">Click Me</button>
+    <br>
+    <br>
+
+    <p id="showclock"></p>
+    <script type="text/javascript">
+
+        var clock = setInterval(clocktiming,1000)
+
+        function clocktiming(){
+
+            var d = new Date();
+            var ok = d.toLocaleTimeString()   
+
+            document.getElementById('showclock').innerHTML = ok;
+        }
+    </script>
+
+
 </body>
 </html>
